@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Add Author</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="{{ url_for('home') }}">Home</a></li>
+      <li><a href="{{ url_for('add_author') }}">Add Author</a></li>
+      <li><a href="{{ url_for('add_book') }}">Add Book</a></li>
+    </ul>
+  </nav>
+
+  <h1>Add Author</h1>
+
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <ul class="flash-messages">
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endwith %}
+
+  <form action="{{ url_for('add_author') }}" method="POST" class="form">
+    <label for="name">Author Name:</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="birthdate">Birthdate:</label>
+    <input type="date" id="birthdate" name="birthdate" required />
+
+    <label for="date_of_death">Date of Death:</label>
+    <input type="date" id="date_of_death" name="date_of_death" />
+
+    <input type="submit" value="Add Author" class="btn" />
+  </form>
+
+  <p><a href="{{ url_for('home') }}">Back to Home</a></p>
+</body>
+</html>

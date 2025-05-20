@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #f4f6f8;
+  color: #222;
+  padding: 0 20px 40px 20px;
+}
+
+nav {
+  background-color: #2a76d2;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.nav-menu li a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  color: #2a76d2;
+  margin-bottom: 25px;
+}
+
+form.form {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgb(42 118 210 / 0.3);
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #444;
+  font-size: 1rem;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="number"],
+form select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  border: 2px solid #cdd6df;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.25s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="date"]:focus,
+form input[type="number"]:focus,
+form select:focus {
+  border-color: #2a76d2;
+  outline: none;
+}
+
+form input[type="submit"].btn {
+  background-color: #2a76d2;
+  color: white;
+  border: none;
+  padding: 14px 25px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  width: 100%;
+}
+
+form input[type="submit"].btn:hover {
+  background-color: #1f5bb8;
+}
+
+.flash-messages {
+  background-color: #dff0d8;
+  border: 1px solid #a3c293;
+  padding: 12px 18px;
+  border-radius: 8px;
+  color: #3c763d;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+p a {
+  color: #2a76d2;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
